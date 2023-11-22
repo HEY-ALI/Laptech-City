@@ -1,0 +1,107 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff; /* Darken text color for better readability */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Add subtle drop shadow */
+}
+
+.navbar-brand {
+  width: 50px; /* Adjust the width of the container to make it a square */
+  height: 50px; /* Adjust the height of the container to make it a square */
+  background-color: #fff; /* Add subtle background for branding */
+  border: 1px solid #ccc; /* Add subtle border for separation */
+  border-radius: 50%; /* Make the container circular */
+  overflow: hidden; /* Ensure the border-radius applies correctly */
+}
+
+.navbar-brand img {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Make the image fill the container */
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem; /* Add spacing between menu items for better readability */
+}
+
+.navbar-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem; /* Adjust font size as needed */
+  position: relative;
+  padding: 0.5rem 1rem;
+  background-color: transparent; /* Remove default background color */
+  border-radius: 0.25rem; /* Add rounded corners for a more polished look */
+  transition: background-color 0.3s ease; /* Add transition for smoother effect */
+}
+
+.navbar-menu a:hover {
+  color: #ffd700;  /* Add subtle background color on hover */
+   /* Change color to primary blue */
+}
+
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.7rem; /* Increase the font size a little bit */
+}
+
+/* Dropdown styles */
+.navbar-menu .dropdown {
+  position: relative;
+}
+
+.navbar-menu .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff; /* Brighten background color for better contrast */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.navbar-menu .dropdown:hover .dropdown-content {
+  display: block;
+  flex-direction: column;
+}
+
+.navbar-menu .dropdown-content a {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem; /* Maintain font size consistency */
+  color: #333;
+  white-space: nowrap;
+  transition: background-color 0.3s ease; /* Add transition for smoother effect */
+}
+
+.navbar-menu .dropdown-content a:hover {
+  background-color: #f2f2f2; /* Add subtle background color on hover */
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust as needed based on my navbar height */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+  }
+
+  .navbar-menu.mobile-menu-open {
+    display: flex;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}

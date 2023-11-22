@@ -1,0 +1,44 @@
+/* src/Home.css */
+
+.home-container {
+  text-align: center;
+  background-color: #fff0f5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hero-section {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.hero-section h1 {
+  font-size: 3.0em;
+  color: #333;
+}
+
+.hero-section p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.image-section {
+  margin-top: 20px;
+  
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.slogan-section {
+  margin-top: 20px;
+}
+
+.slogan-section h2 {
+  color: #333;
+}
+
+.slogan-section p {
+  color: #555;
+}

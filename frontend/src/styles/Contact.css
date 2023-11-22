@@ -1,0 +1,101 @@
+/* Overall Styling */
+.contact-container {
+  background-color: #fff5ee;
+  padding: 2rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  text-align: center; /* Center the content horizontally */
+}
+
+/* Heading */
+.heading {
+  font-size: 2.5rem; /* Adjust font size for responsiveness */
+  font-weight: bold;
+  text-align: center;
+  color: #333; /* Dark gray text color */
+  margin-bottom: 2rem;
+}
+
+/* Upper Section (Contact Info and Contact Details) */
+.upper-section {
+  display: flex;
+  flex-wrap: wrap; /* Wrap elements to multiple lines on smaller screens */
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Contact Info and Details Boxes */
+.contact-info,
+.contact-details {
+  width: 40%; /* Set a fixed width for each panel on larger screens */
+  margin: 1rem 0; /* Adjust spacing for responsiveness */
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.contact-info h3,
+.contact-details h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info p,
+.contact-details ul {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.contact-details ul li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-details ul li strong {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Map Container */
+.map-container {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 2rem;
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin: 0 auto; /* Center the contact form on smaller screens */
+  width: 80%; /* Adjust form width for responsiveness */
+}
+
+.contact-form h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 992px) {
+  /* Remove spacing between contact info and details on smaller screens */
+  .contact-info,
+  .contact-details {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Make contact info and details full-width on extra small screens */
+  .contact-info,
+  .contact-details {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

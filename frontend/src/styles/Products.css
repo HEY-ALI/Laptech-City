@@ -1,0 +1,66 @@
+/* src/styles/Products.css */
+.products-container {
+  margin: 20px;
+}
+
+.products-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.products-header h2 {
+  font-size: 28px;
+  color: #333; /* Dark text color */
+}
+
+.products-header p {
+  font-size: 18px;
+  color: #555; /* Slightly darker text color */
+  margin: 10px 0;
+}
+
+.products-header a {
+  color: #ff5722; /* Orange color for the link, you can change this */
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.products-header a:hover {
+  color: #e64a19; /* Darker orange on hover */
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Align products to the start of the container */
+}
+
+.product-card {
+  text-align: center;
+  margin: 10px;
+  padding: 10px; /* Added padding for spacing between product cards */
+  border: 1px solid #ddd; /* Border for product cards */
+  border-radius: 5px; /* Rounded corners for product cards */
+  width: calc(20% - 20px); /* 20% width with margin in between */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.product-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px; /* Rounded corners for images */
+}
+
+.product-card p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333; /* Dark text color */
+}
