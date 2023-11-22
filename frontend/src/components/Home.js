@@ -7,7 +7,7 @@ const Home = () => {
     <div className="home-container">
       <div className="hero-section">
         <p>WELCOME TO</p>
-        <h1>LAPTECH CITYy</h1>
+        <h1>LAPTECH CITY</h1>
         <p>Your One-Stop Solution for Computer Repair, Sales, and Accessories</p>
       </div>
       <div className="image-section">
