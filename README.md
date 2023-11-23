@@ -1,2 +1,2 @@
 # Laptech-City
- A React App for Computer Services
+ An Ultimate Platform for Computer Services

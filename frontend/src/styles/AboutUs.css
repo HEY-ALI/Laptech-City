@@ -1,56 +1,102 @@
-
+/* Container styles */
 .about-container {
-  background-color: #fff5ee;
-  padding: 2rem;
-  margin: 0 auto;
+  background-color: #f5f5f5;
+  padding: 3rem 2rem;
+  margin: 0 auto; /* Center the container horizontally */
+  max-width: 100%;
   border-radius: 0.5rem;
-  ; /* Center the content horizontally */
-
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
+/* Heading styles */
 .about-heading {
-  font-size: 2.5rem; /* Large font size for the heading */
-  font-weight: bold; /* Bold font weight for emphasis */
-  text-align: center; /* Center the heading text */
-  color: #333; /* Dark gray text color */
-  margin-bottom: 2rem; /* Add some spacing below the heading */
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #212529;
+  margin-bottom: 2rem;
 }
 
+/* Intro paragraph styles */
 .about-intro {
-  padding: 1rem; /* Spacing around the intro paragraph */
-  background-color: #f5f5f5; /* Light gray background color */
-  border-radius: 0.5rem; /* Add rounded corners for a softer look */
-  margin-bottom: 2rem; /* Add some spacing below the intro paragraph */
+  font-family: sans-serif;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
+/* Highlight text styles */
 .highlight-text {
-  color: #007bff; /* Primary blue color for highlighted text */
-  font-weight: bold; /* Bold font weight for emphasis */
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
 }
 
+/* List item styles */
 .about-list {
-  display: flex; /* Set the list to display flexibly */
-  flex-wrap: wrap; /* Wrap list items to multiple lines if necessary */
-  justify-content: space-between; /* Space list items evenly */
-  margin-bottom: 2rem; /* Add some spacing below the list */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .about-list-item {
-  width: 40%; /* Set the width of each list item */
-  padding: 1rem; /* Spacing around the list item content */
-  background-color: #f5f5f5; /* Light gray background color */
-  border-radius: 0.5rem; /* Add rounded corners for a softer look */
-  margin-bottom: 1rem; /* Add some spacing below each list item */
+  width: calc(50% - 1.5rem);
+  padding: 1.5rem;
+  background-color: #f5f5f5;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
+/* Responsiveness adjustments */
+@media (max-width: 576px) {
+  .about-container {
+    max-width: 95%;
+    padding: 2rem 1rem;
+  }
+
+  .about-heading {
+    font-size: 1.8rem;
+  }
+
+  .about-list-item {
+    width: 100%;
+  }
+
+  .about-text {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center; /* Center-align text on small screens */
+  }
+
+  .about-heading {
+    font-size: 1.6rem;
+  }
+}
+
+/* General text styles */
 .about-text {
-  font-size: 1rem; /* Medium font size for general text */
-  line-height: 1.5; /* Increase line height for better readability */
-  color: #333; /* Dark gray text color */
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  text-align: justify;
+  margin-bottom: 0.5rem;
 }
 
+/* Signature text styles */
 .signature-text {
-  font-size: 1.2rem; /* Slightly larger font size for signature text */
-  text-align: center; /* Center the signature text */
-  margin-top: 2rem; /* Add some spacing above the signature text */
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .about-container {
+    margin: 0 auto; /* Center the container horizontally */
+  }
 }
