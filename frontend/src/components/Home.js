@@ -18,7 +18,7 @@ const Home = () => {
         />
       </div>
       <div className="slogan-section">
-        <h3>Quality Repairs, Affordable Prices</h3>
+        <h2>Quality Repairs, Affordable Prices</h2>
         <p>Explore our range of new and refurbished laptops. We buy, sell, and repair computers.</p>
       </div>
     </div>

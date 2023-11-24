@@ -8,23 +8,25 @@
 }
 
 .hero-section {
-  padding: 10px;
+  padding: 0px;
   border-radius: 10px;
 }
 
 .hero-section h1 {
   font-size: 3.0em;
   color: #333;
+  margin-bottom: 5px; /* Adjust the bottom margin to control the gap */
+  margin-top: -20px;
 }
 
 .hero-section p {
   font-size: 1.2em;
   color: #555;
+  margin-top: 5px; /* Adjust the top margin to control the gap */
 }
 
 .image-section {
   margin-top: 20px;
-  
 }
 
 .hero-image {
@@ -37,8 +39,37 @@
 
 .slogan-section h2 {
   color: #333;
+
 }
 
 .slogan-section p {
   color: #555;
+  font-size:1.4em;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .hero-section {
+    height: auto; /* Allow the height to adjust based on content */
+  }
+
+  .hero-section h1 {
+    font-size: 2.0em;
+    margin-bottom: 5px; /* Adjust the bottom margin for smaller screens */
+    margin-top: -20px;
+  }
+
+  .hero-section p {
+    font-size: 0.9em;
+    margin-top: 5px; /* Adjust the top margin for smaller screens */
+  }
+
+  .slogan-section h2 {
+    font-size: 1.1em;
+  }
+
+
+  .slogan-section p {
+    font-size: 0.8em;
+  }
 }
