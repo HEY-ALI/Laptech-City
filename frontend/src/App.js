@@ -8,6 +8,7 @@ import ServicePage from './pages/ServicePage';
 import ProductPage from './pages/ProductPage';
 import AboutUsPage from './pages/AboutUsPage';
 import ContactPage from './pages/ContactPage';
+import AppDownloadPage from './pages/AppDownloadPage';
 import Footer from './components/Footer';
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/products" element={<ProductPage />} />
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/download" element={<AppDownloadPage />} />
         </Routes>
         <Footer />
       </div>

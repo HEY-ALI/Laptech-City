@@ -21,6 +21,7 @@ const Navbar = () => {
         <a href="/services">Services</a>
         <a href="/products">Products</a>
         <a href="/about">About Us</a>
+        <a href="/download">Download App</a>
         <a href="/contact">Contact</a>
       </div>
       <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
