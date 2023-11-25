@@ -5,7 +5,7 @@ import '../styles/AboutUs.css';
 const AboutUs = () => {
   return (
     <div className="about-container">
-      <h2 className="about-heading">Who We Are</h2>
+      <h1 className="about-heading">Who We Are</h1>
       <div className="about-intro">
         <p className="highlight-text">
           At <span className="highlight-text">Laptect City</span>, we're not just a technology store; we are your partners in creating an exceptional digital experience. Our commitment goes beyond selling products – we're dedicated to providing solutions and enhancing your journey in the digital world.
