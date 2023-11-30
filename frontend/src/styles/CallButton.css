@@ -1,0 +1,37 @@
+/* CallButton.css */
+.call-button {
+    position: fixed;
+    bottom: 120px;
+    left: 20px;
+    background-color: #34b7f1;
+    padding: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .call-button img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+  
+  .call-button:hover {
+    background-color: #1e87d3;
+  }
+  
+  /* Media Query for Desktop Screens */
+  @media (min-width: 768px) {
+    .call-button {
+      padding: 16px;
+    }
+  
+    .call-button img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  

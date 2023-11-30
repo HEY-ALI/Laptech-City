@@ -1,28 +1,32 @@
-import React from 'react';
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
-import { Marker } from '@react-google-maps/api';
+import React, { useState } from 'react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 import '../styles/MapComponent.css';
 
 const MapComponent = () => {
-  const [markerPosition, setMarkerPosition] = React.useState({ lat: 28.433699, lng: 77.320791 });
+  const [markerPosition, setMarkerPosition] = useState([28.433699, 77.320791]);
 
   const handleMarkerDragEnd = (event) => {
-    setMarkerPosition({ lat: event.latLng.lat(), lng: event.latLng.lng() });
+    const newPosition = event.latlng;
+    setMarkerPosition([newPosition.lat, newPosition.lng]);
   };
 
   return (
-    <LoadScript
-      googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}
-    >
-      <GoogleMap
-        mapContainerStyle={{ width: '100%', height: '400px' }}
-        center={markerPosition}
-        zoom={14}
+    <MapContainer center={markerPosition} zoom={14}>
+      <TileLayer
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+      />
+      <Marker
+        position={markerPosition}
+        draggable
+        onDragEnd={handleMarkerDragEnd}
       >
-        <Marker position={markerPosition} draggable onDragEnd={handleMarkerDragEnd} />
-      </GoogleMap>
-    </LoadScript>
+        <Popup>
+          Marker Position: {markerPosition.join(', ')}
+        </Popup>
+      </Marker>
+    </MapContainer>
   );
 };
 

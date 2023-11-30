@@ -22,7 +22,7 @@ const Products = () => {
         <p>
            Explore our full product catalog{' '}
           <a href="https://wa.me/c/918860742009" target="_blank" rel="noopener noreferrer">
-            here
+            Click here
           </a>
         </p>
       </div>

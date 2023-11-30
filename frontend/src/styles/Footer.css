@@ -31,11 +31,10 @@ a {
   color: #fff;
 }
 
-
 /* Media query for mobile screens */
 @media only screen and (max-width: 767px) {
   .footer-content {
-    padding: 10px; 
+    padding: 10px;
   }
 
   h3 {
@@ -44,5 +43,10 @@ a {
 
   a {
     font-size: 14px; 
+  }
+
+  /* Add this rule for smaller font size in p tags within .footer-content */
+  .footer-content p {
+    font-size: 12px;
   }
 }
