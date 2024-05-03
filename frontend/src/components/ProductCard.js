@@ -5,36 +5,15 @@ import '../styles/ProductCard.css'; // Assuming styles.css is one level above (s
 const ProductCard = ({ product }) => {
   const whatsappNumber = '+918860742009'; // Replace with your WhatsApp number
 
-  const getProductImageBase64 = async (imageUrl) => {
-    try {
-      const response = await fetch(imageUrl);
-      const blob = await response.blob();
-      const base64Data = await new Promise((resolve, reject) => {
-        const reader = new FileReader();
-        reader.onloadend = () => resolve(reader.result);
-        reader.onerror = reject;
-        reader.readAsDataURL(blob);
-      });
-      return base64Data;
-    } catch (error) {
-      console.error('Error fetching product image:', error);
-      return null;
-    }
-  };
+  const handleQueryClick = () => {
+    // Construct the WhatsApp message
+    const message = `Hi, I'm interested in the ${product.title}. Here is the link: ${window.location.href}`;
 
-  const handleQueryClick = async () => {
-    try {
-      const productImageBase64 = await getProductImageBase64(product.imageUrl);
+    // Construct the WhatsApp URL with your phone number and pre-filled message
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
-      const message = `Hi, I'm interested in the ${product.title}. Here is the product image:\n${productImageBase64}`;
-
-      const encodedMessage = encodeURIComponent(message);
-      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
-
-      window.open(whatsappURL, '_blank');
-    } catch (error) {
-      console.error('Error sending WhatsApp message:', error);
-    }
+    // Open the WhatsApp chat in a new tab/window
+    window.open(whatsappURL, '_blank');
   };
 
   return (
