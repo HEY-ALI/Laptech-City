@@ -7,7 +7,7 @@ const ProductCard = ({ product }) => {
 
   const handleQueryClick = () => {
     // Construct the WhatsApp message
-    const message = `Hi, I'm interested in the ${product.title}. Here is the link: ${window.location.href}`;
+    const message = `Hi, I'm interested in the ${product.title}. Here is the product image: ${product.imageUrl}`;
 
     // Construct the WhatsApp URL with your phone number and pre-filled message
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
