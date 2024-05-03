@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../styles/ProductCard.css'; // Assuming styles.css is one level above (src)
 
 const ProductCard = ({ product }) => {
-  const whatsappNumber = '8860742009'; // Replace with your WhatsApp number
+  const whatsappNumber = '+918860742009'; // Replace with your WhatsApp number
 
   const handleQueryClick = () => {
     // Construct the WhatsApp message
