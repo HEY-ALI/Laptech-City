@@ -5,9 +5,9 @@ const ShareButton = () => {
     try {
       if (navigator.share) {
         await navigator.share({
-          title: document.title,
+          title: 'Laptech City',
           text: 'Check out Laptech City - A Refurbished Laptop Hub and Services!',
-          url: window.location.href
+          url: 'https://www.laptechcity.com/download'  // Specify the download link here
         });
       } else {
         alert('Web Share API is not supported in this browser.');
@@ -18,7 +18,7 @@ const ShareButton = () => {
   };
 
   const handleDownload = () => {
-    const apkUrl = "https://www.laptechcity.com/download";
+    const apkUrl = 'https://www.laptechcity.com/download';
     window.open(apkUrl); // Open download link in new tab
   };
 
