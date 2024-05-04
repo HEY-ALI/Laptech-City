@@ -23,35 +23,19 @@ const ShareButton = () => {
   };
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center' }}>
-      <button
-        style={{
-          padding: '0.5rem 1rem',
-          fontSize: '1.2rem',
-          border: 'none',
-          backgroundColor: 'transparent',
-          color: '#ecf0f1',
-          cursor: 'pointer',
-          marginRight: '10px'
-        }}
-        onClick={handleDownload}
-      >
-        Download App
-      </button>
-      <button
-        style={{
-          padding: '0.5rem 1rem',
-          fontSize: '1.2rem',
-          border: 'none',
-          backgroundColor: '#3498db',
-          color: '#ecf0f1',
-          cursor: 'pointer'
-        }}
-        onClick={handleShare}
-      >
-        Share
-      </button>
-    </div>
+    <button
+      style={{
+        padding: '0.5rem 1rem',
+        fontSize: '1.2rem',
+        border: 'none',
+        backgroundColor: '#3498db',
+        color: '#ecf0f1',
+        cursor: 'pointer'
+      }}
+      onClick={handleShare}
+    >
+      Share
+    </button>
   );
 };
 

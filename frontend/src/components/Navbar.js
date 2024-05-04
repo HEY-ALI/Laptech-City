@@ -19,12 +19,27 @@ const Navbar = () => {
         <a href="/services">Services</a>
         <a href="/products">Products</a>
         <a href="/about">About Us</a>
-        <a href="/download">Download App</a>
-        <div className="menu-item-with-share">
-          <a href="/contact">Contact</a>
-          <div className="share-button-container">
-            <ShareButton />
-          </div>
+        <a href="/contact">Contact</a>
+        <div className="menu-item">
+          <button
+            style={{
+              padding: '0.5rem 1rem',
+              fontSize: '1.2rem',
+              border: 'none',
+              backgroundColor: 'transparent',
+              color: '#ecf0f1',
+              cursor: 'pointer'
+            }}
+            onClick={() => {
+              const apkUrl = 'https://www.laptechcity.com/download';
+              window.open(apkUrl); // Open download link in new tab
+            }}
+          >
+            Download App
+          </button>
+        </div>
+        <div className="menu-item">
+          <ShareButton />
         </div>
       </div>
       <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
