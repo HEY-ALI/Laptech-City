@@ -25,7 +25,7 @@ const Footer = () => {
                 <a href="https://www.facebook.com/iitfagroup/"><FaFacebookF /></a>
                 <a href="https://www.instagram.com/laptech_city/"><FaInstagram /></a>
                 <a href="https://twitter.com/laptechcity"><FaTwitter /></a>
-                <a href="https://www.youtube.com/laptechcity"><FaYoutube /></a>
+                <a href="https://www.youtube.com/channel/UCFsT9AQGyOXLLNNjhyUW-Kw?app=desktop"><FaYoutube /></a>
               </div>
             </div>
           </div>

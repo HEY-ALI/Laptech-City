@@ -16,11 +16,7 @@ const Contact = () => {
               <br />
               Shop No. 72B, HUDA Market Sector-29, Faridabad, Haryana 121008
             </li>
-            <li>
-              <strong>[Second Office Name]:</strong>
-              <br />
-              [Second Office Address] (Optional: Include phone number if available)
-            </li>
+          
           </ul>
         </div>
         <div className="contact-details">
@@ -33,9 +29,7 @@ const Contact = () => {
             <li>
               <strong>Phone No.:</strong> +918860742009
             </li>
-            <li>
-              <strong>Fax:</strong> (Optional: Add fax number if applicable)
-            </li>
+           
             <li>
               <strong>Social Media:</strong>
               <ul className="social-links">
@@ -53,8 +47,8 @@ const Contact = () => {
               </ul>
             </li>
             <li>
-              <strong>Website:</strong> (Optional: Add your website URL if applicable)
-              <a href="[Your Website URL]">[Your Website Name]</a>
+              <strong>Website:</strong> WWW.Laptechcity.com
+              <a href="https://www.laptechcity.com/">Laptech City</a>
             </li>
           </ul>
         </div>
