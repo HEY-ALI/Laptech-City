@@ -1,14 +1,15 @@
 /* Overall Styling */
 .contact-container {
-  background-color: #f5f5f5; /* Light gray background */
-  padding: 3rem; /* Increased padding for more space */
+  background-color: #fff5ee;
+  padding: 2rem;
   margin: 0 auto;
   border-radius: 0.5rem;
+  text-align: center; /* Center the content horizontally */
 }
 
 /* Heading */
 .heading {
-  font-size: 2.8rem; /* Increased font size */
+  font-size: 2.5rem; /* Adjust font size for responsiveness */
   font-weight: bold;
   text-align: center;
   color: #333; /* Dark gray text color */
@@ -26,32 +27,29 @@
 /* Contact Info and Details Boxes */
 .contact-info,
 .contact-details {
-  width: 45%; /* Slightly increased width for better readability */
+  width: 40%; /* Set a fixed width for each panel on larger screens */
   margin: 1rem 0; /* Adjust spacing for responsiveness */
   background-color: #fff;
-  padding: 1.5rem; /* Increased padding for more content */
+  padding: 1rem;
   border-radius: 0.5rem;
-  text-align: left; /* Left-align content */
+  text-align: center;
 }
 
 .contact-info h3,
 .contact-details h3 {
-  font-size: 1.8rem; /* Increased heading size */
+  font-size: 1.5rem;
   font-weight: bold;
   color: #333;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-.contact-info ul,
+.contact-info p,
 .contact-details ul {
   font-size: 1rem;
   line-height: 1.5;
   color: #555;
-  list-style: none; /* Remove default bullet points */
-  padding: 0; /* Remove default list padding */
 }
 
-.contact-info ul li,
 .contact-details ul li {
   margin-bottom: 0.5rem;
 }
@@ -59,35 +57,6 @@
 .contact-details ul li strong {
   font-weight: bold;
   color: #333;
-}
-
-/* Contact Details - Specific Styles */
-.contact-details ul li a {
-  color: #333; /* Make links stand out from text */
-  text-decoration: none; /* Remove default underline */
-}
-
-.contact-details ul li a:hover {
-  text-decoration: underline; /* Underline links on hover */
-}
-
-/* Social Media Links (Optional) */
-.social-links {
-  display: flex; /* Arrange social media icons horizontally */
-  justify-content: space-between; /* Space icons evenly */
-  margin: 0.5rem 0; /* Add some margin */
-}
-
-.social-links li {
-  list-style: none; /* Remove default list markers */
-}
-
-.social-links li a {
-  color: #333; /* Make social media icons stand out */
-}
-
-.social-links li a:hover {
-  color: #007bff; /* Change icon color on hover (blue by default) */
 }
 
 /* Map Container */
@@ -106,8 +75,27 @@
   width: 80%; /* Adjust form width for responsiveness */
 }
 
-.contact-form h3 {
+.contact-form h2 {
   font-size: 1.8rem;
   font-weight: bold;
-  
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 992px) {
+  /* Remove spacing between contact info and details on smaller screens */
+  .contact-info,
+  .contact-details {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Make contact info and details full-width on extra small screens */
+  .contact-info,
+  .contact-details {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }

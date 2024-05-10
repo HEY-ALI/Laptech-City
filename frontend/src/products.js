@@ -53,8 +53,8 @@ const products = [
       {
         id: 6,
         imageUrl: "/images/product/8570w.jpg", // Assuming images are in `public/images/product`
-        title: "(Refurbished) HP Elitebook Laptop 8570W Mobile Workstation Intel Core i7 - 3rd Gen, 8 GB RAM & 256 GB SSD,15.5 inch Display",
-        description: "8gb RAM  256gb SSD",
+        title: "HP Elitebook 8570w Workstation",
+        description: "(Refurbished) HP Elitebook 8570W MObile Workstation, 8 GB RAM & 256 GB SSD, 15.5 inch Display",
         images: [
           "/images/product/8570w_01.jpg",
           "/images/product/8570w_02.jfif",
@@ -63,8 +63,8 @@ const products = [
       {
         id: 7,
         imageUrl: "/images/product/820g1.jpg", // Assuming images are in `public/images/product`
-        title:"(Refurbished) HP Elitebook Laptop 840G5 Intel Core i5 - 4th Gen, 8 GB RAM & 256 GB SSD, 12.5 inch Display",
-        description: "8gb RAM  256gb SSD",
+        title:"HP Elitebook Laptop 840 G5 ",
+        description: "(Refurbished) HP Elitebook Laptop 840G5 Intel Core i5 - 4th Gen, 8 GB RAM & 256 GB SSD, 12.5 inch Display",
         images: [
           "/images/product/820g1_01.jpg",
           "/images/product/820g1_02.jpg",
@@ -73,8 +73,8 @@ const products = [
       {
         id: 8,
         imageUrl: "/images/product/240g7.png", // Assuming images are in `public/images/product`
-        title: "(Refurbished) HP   Laptop 240g7 Intel Core i5 - 8th Gen, 8 GB RAM & 256 GB SSD, 14 inch Display",
-        description: "8gb RAM  256gb SSD",
+        title: "HP 240 G7 ",
+        description: "(Refurbished) HP   Laptop 240g7 Intel Core i5 - 8th Gen, 8 GB RAM & 256 GB SSD, 14 inch Display",
         images: [
           "/images/product/240g7_01.jfif",
           "/images/product/240g7_02.jfif",

@@ -1,5 +1,30 @@
+/* MapComponent.css */
 .map-container {
-  position: relative;
+  height: 400px;
+  width: 100%;
+  border-radius: 8px;
   overflow: hidden;
-  height: 400px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leaflet-map {
+  height: 100%;
+  width: 100%;
+}
+
+.leaflet-popup {
+  min-width: 200px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.leaflet-popup-content {
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.leaflet-popup-content strong {
+  font-weight: bold;
+  color: #007bff; /* Blue color for strong text */
 }

@@ -2,7 +2,7 @@
 .contact-form {
   display: grid;
   grid-gap: 15px;
-  width: 90%; 
+  width: 90%; /* Increase the width by 20% */
   max-width: 500px;
   margin: 0 auto;
   background-color: #f5f5f5;
@@ -51,4 +51,4 @@ button:hover {
   background-color: #45a049;
 }
 
-
+/* Additional styling for ContactForm can be added here */
