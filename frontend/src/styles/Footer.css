@@ -1,52 +1,68 @@
 .footer {
   text-align: center;
+  background-color: #333;
+  color: #fff;
 }
 
 .footer-section {
-  background-color: #f0f0f0;
-  color: #333;
-  padding: 20px;
-  margin-bottom: 0; 
+  background-color: #222;
+  color: #fff;
+  padding: 30px 0;
 }
 
 .footer-copyright {
-  background-color: #333;
+  background-color: #111;
   color: #fff;
-  padding: 10px; 
-  margin-top: -10px; 
+  padding: 20px 0;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+  justify-content: center;
 }
 
 h3 {
-  color: #555;
+  color: #ccc;
+  font-size: 20px;
 }
 
 a {
   text-decoration: none;
   color: #fff;
+  display: inline-block;
+}
+
+p {
+  font-size: 16px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  margin-right: 15px;
 }
 
 /* Media query for mobile screens */
 @media only screen and (max-width: 767px) {
-  .footer-content {
-    padding: 10px;
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   h3 {
-    font-size: 16px; 
+    font-size: 18px;
   }
 
-  a {
-    font-size: 14px; 
+  p {
+    font-size: 14px;
   }
 
-  /* Add this rule for smaller font size in p tags within .footer-content */
-  .footer-content p {
-    font-size: 12px;
+  .social-icons a {
+    font-size: 20px;
   }
 }
