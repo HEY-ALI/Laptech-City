@@ -9,16 +9,16 @@ const Footer = () => {
         <div className="footer-content">
           <div className="grid">
             <div>
-              <h3>Head Office</h3>
+              <h3>Branch 1 Office</h3>
               <p>72B, HUDA Market Sector-29, Faridabad, Haryana, 121002</p>
             </div>
             <div>
-              <h3>Branch Office</h3>
+              <h3>Branch 2 Office</h3>
               <p>Lane 1 Indira Complex, Khedi Road, Faridabad, Haryana, 121002</p>
             </div>
             <div>
               <h3>Contact Us</h3>
-              <p>Email: info@laptechcity.com</p>
+              <p>Email: laptechcity@gmail.com</p>
               <p>Phone: (+91) 8860742009</p>
               <p>WhatsApp: (+91) 8860742009</p>
               <div className="social-icons">

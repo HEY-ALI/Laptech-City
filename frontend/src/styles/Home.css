@@ -71,3 +71,20 @@
     font-size: 0.8em;
   }
 }
+
+/* ... existing styles */
+
+.video-section {
+  /* Additional styles for video section */
+}
+
+.video-section video {
+  width: 100%; /* Ensures video fills container width */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .video-section video {
+    height: 150px; /* Adjust height for smaller screens */
+  }
+}

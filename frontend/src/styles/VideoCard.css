@@ -1,0 +1,30 @@
+.video-card {
+  display: inline-block; /* Arrange cards side-by-side (desktop) */
+  margin: 10px; /* Adjust spacing between cards (desktop) */
+  text-align: center;
+  /* Adjust width as needed to fit three cards in a row */
+  width: calc(33.33% - 20px); /* Example width calculation */
+}
+
+.video-card video {
+  width: 100%; /* Ensure video fills container width */
+  height: auto; /* Allow height to adjust based on aspect ratio */
+}
+
+.video-card-title {
+  margin-top: 5px;
+}
+
+/* Media query for smaller screens (keep as is for mobile portrait layout) */
+@media (max-width: 600px) {
+  .video-card {
+    display: block; /* Change to block for one video per row */
+    width: 70%; /* Adjust width for margins and portrait layout */
+    margin: 15px auto; /* Set margins for mobile layout (centered) */
+  }
+
+  .video-card video {
+    /* Force portrait mode with aspect ratio (adjust multiplier as needed) */
+    height: calc(100vw * 1.5); /* Set height to 1.5 times viewport width */
+  }
+}
