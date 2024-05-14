@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="hero-section">
-        <p>WELCOME TOO</p>
+        <p>WELCOME TO</p>
         <h1>LAPTECH CITY</h1>
         <p><b>A Refurbished Laptop Hub and Services</b></p>
       </div>
