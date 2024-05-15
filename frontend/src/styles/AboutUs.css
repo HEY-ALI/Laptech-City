@@ -1,6 +1,6 @@
 /* Container styles */
 .about-container {
-  background-color: #f5f5f5;
+  background-color: #4d194d;
   padding: 3rem 2rem;
   margin: 0 auto; /* Center the container horizontally */
   max-width: 100%;
@@ -11,7 +11,7 @@
 }
 
 .about-container h1{
-  color: #333;
+  color: #6e6e71;
   font-size: 2.5em;
   margin-bottom: 20px;
 
@@ -22,7 +22,7 @@
   font-family: sans-serif;
   font-size: 5rem;
   font-weight: bold;
-  color: #212529;
+  color: white;
   margin-bottom: 2rem;
   text-align: center; /* Center the heading */
 }
@@ -31,7 +31,7 @@
 .about-intro {
   font-family: sans-serif;
   padding: 1.5rem;
-  background-color: #fff;
+  
   border-radius: 0.75rem;
   margin-bottom: 2rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -70,6 +70,7 @@
 
   .about-heading {
     font-size: 1.8rem;
+    
   }
 
   .about-list-item {
@@ -97,6 +98,9 @@
   margin-bottom: 0.5rem;
 }
 
+
+
+
 /* Signature text styles */
 .signature-text {
   font-family: sans-serif;
@@ -105,6 +109,9 @@
   margin-top: 2rem;
   text-align: center;
 }
+
+.last {
+  color: #f5f5f5;}
 
 @media (min-width: 768px) {
   .about-container {

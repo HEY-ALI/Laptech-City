@@ -1,5 +1,6 @@
 .product-card {
   border: 1px solid #ddd;
+  background-color: #4c495d;
   border-radius: 8px;
   padding: 20px;
   text-align: center;
@@ -26,4 +27,11 @@
 .product-card a {
   text-decoration: none;
   color: inherit;
+}
+
+/* Media Queries for Mobile Screens */
+@media (max-width: 768px) {
+  .product-card {
+    margin: 35px; /* Increased margin for mobile screens */
+  }
 }

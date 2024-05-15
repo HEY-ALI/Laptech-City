@@ -1,6 +1,7 @@
 .home-container {
   text-align: center;
-  background-color: #fff0f5;
+  background-color: #141619; /* Dark background color */
+  color: #B3B4Bd; /* Light color for text */
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -8,18 +9,18 @@
 .hero-section {
   padding: 0px;
   border-radius: 10px;
+  background-color: #141619; /* Slightly lighter background for hero section */
+  color: #fff; /* Light color for text */
 }
 
 .hero-section h1 {
   font-size: 3.0em;
-  color: #333;
   margin-bottom: 5px; /* Adjust the bottom margin to control the gap */
   margin-top: -20px;
 }
 
 .hero-section p {
   font-size: 1.2em;
-  color: #555;
   margin-top: 5px; /* Adjust the top margin to control the gap */
 }
 
@@ -36,13 +37,12 @@
 }
 
 .slogan-section h2 {
-  color: #333;
-
+  color: #fff; /* Light color for headings */
 }
 
 .slogan-section p {
-  color: #555;
-  font-size:1.4em;
+  color: #ddd; /* Light gray for paragraph text */
+  font-size: 1.4em;
 }
 
 /* Media query for smaller screens */
@@ -65,7 +65,6 @@
   .slogan-section h2 {
     font-size: 1.1em;
   }
-
 
   .slogan-section p {
     font-size: 0.8em;

@@ -1,6 +1,6 @@
 /* Overall Styling */
 .contact-container {
-  background-color: #fff5ee;
+  background-color: #053c5e;
   padding: 2rem;
   margin: 0 auto;
   border-radius: 0.5rem;
@@ -12,7 +12,7 @@
   font-size: 2.5rem; /* Adjust font size for responsiveness */
   font-weight: bold;
   text-align: center;
-  color: #333; /* Dark gray text color */
+  color: #fb8500; /* Dark gray text color */
   margin-bottom: 2rem;
 }
 

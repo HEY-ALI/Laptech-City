@@ -29,7 +29,7 @@ const AboutUs = () => {
           <p className="about-text">Our mission is to provide top-notch customer service, offering personalized solutions tailored to your unique needs.</p>
         </div>
       </div>
-      <p className="about-text signature-text">
+      <p className="about-text signature-text last " >
         Join us at <span className="highlight-text">Laptect City</span> – where technology meets innovation, and your digital aspirations come to life.
       </p>
     </div>

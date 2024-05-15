@@ -1,7 +1,10 @@
+/* General Styles */
 .products-container {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%; /* Take up full horizontal space */
+  margin: 0; /* Remove any margin for full width */
   padding: 40px 0;
+  background: #2D283E; /* Dark gradient for background */
+  color: #fff; /* Light text color */
 }
 
 .products-header {
@@ -9,8 +12,18 @@
   margin-bottom: 40px;
 }
 
+/* Product Grid Styles */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   grid-gap: 20px;
 }
+
+.products-header h1{
+  color: #802bb1;
+  font-size: 2.5em;
+      margin-bottom: 20px;  
+
+}
+
+/* Individual Product Card Styles (handled later) */

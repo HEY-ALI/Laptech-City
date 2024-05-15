@@ -1,5 +1,6 @@
 /* src/components/ServiceCard.css */
 .service-card {
+  background-color: #022140;
     border: 1px solid #ddd;
     padding: 15px;
     margin: 15px;
@@ -16,6 +17,7 @@
   
   .card-title {
     margin-top: 10px;
+    color: #f070a1;
   }
   
   .card-content {
