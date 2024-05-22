@@ -1,4 +1,3 @@
-// ContactForm.js
 import React, { useState } from 'react';
 import '../styles/ContactForm.css';
 
@@ -9,13 +8,32 @@ const ContactForm = () => {
     message: '',
   });
 
+  const [status, setStatus] = useState('');
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic here
+    try {
+      const response = await fetch('http://localhost:5000/api/form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus('Form submitted successfully');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setStatus('Failed to submit form');
+      }
+    } catch (error) {
+      setStatus('An error occurred while submitting the form');
+    }
   };
 
   return (
@@ -36,6 +54,8 @@ const ContactForm = () => {
       </div>
 
       <button type="submit">Submit</button>
+
+      {status && <p className="status-message">{status}</p>}
     </form>
   );
 };

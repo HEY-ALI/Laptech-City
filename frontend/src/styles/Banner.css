@@ -1,0 +1,67 @@
+.banner-container {
+    background-color: #007bff; /* Example blue background color */
+    color: #ffffff; /* White text color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.text-container {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.image-container {
+    width: 50%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.whatsapp-button {
+    width: 30%;
+    text-align: center;
+}
+
+.whatsapp-button img {
+    width: 80px;
+}
+
+/* Media query for responsive design (e.g., for smaller screens) */
+@media (max-width: 768px) {
+    .content-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-container {
+        width: 100%;
+    }
+
+    .image-container {
+        width: 100%;
+        margin-top: 20px; /* Add space between image and text on smaller screens */
+    }
+
+    .whatsapp-button {
+        width: 100%;
+        margin-top: 20px; /* Add space below content on smaller screens */
+    }
+}

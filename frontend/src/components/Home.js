@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Home.css';
 import VideoCard from './VideoCard'; // Import the VideoCard component
 
+
 const Home = () => {
   const videoData = [
     { src: 'images/videos/vid.mp4', title: '' },
