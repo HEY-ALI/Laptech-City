@@ -19,7 +19,7 @@ const port = process.env.PORT || 5000;
 
 // Middleware
 const corsOptions = {
-  origin: 'http://localhost:3000', // Update with your frontend URL
+  origin: process.env.CLIENT_URL, // Use CLIENT_URL from environment variables
   optionsSuccessStatus: 200
 };
 
@@ -124,7 +124,6 @@ app.get('/api/sales/:id', verifyToken, async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
-
 
 app.put('/api/sales/:id', verifyToken, async (req, res) => {
   if (!req.user.isAdmin) return res.status(403).send('Access Denied');

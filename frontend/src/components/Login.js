@@ -8,11 +8,12 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
+  const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/admin/login', { username, password });
+      const res = await axios.post(`${apiUrl}/admin/login`, { username, password });
       localStorage.setItem('auth-token', res.data);
       navigate('/admin/sales');
     } catch (err) {

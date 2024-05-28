@@ -1,7 +1,7 @@
 // src/pages/AdminSales.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom';
 import '../styles/AdminSales.css';
 
 const AdminSales = () => {
@@ -19,7 +19,8 @@ const AdminSales = () => {
   const [salesData, setSalesData] = useState([]);
   const [showSalesData, setShowSalesData] = useState(false);
 
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
+  const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -31,7 +32,7 @@ const AdminSales = () => {
 
     try {
       const token = localStorage.getItem('auth-token');
-      await axios.post('http://localhost:5000/api/sales', formData, {
+      await axios.post(`${apiUrl}/sales`, formData, {
         headers: {
           'auth-token': token,
           'Content-Type': 'application/json'
@@ -85,7 +86,7 @@ const AdminSales = () => {
   const fetchSalesData = async () => {
     try {
       const token = localStorage.getItem('auth-token');
-      const res = await axios.get('http://localhost:5000/api/sales', {
+      const res = await axios.get(`${apiUrl}/sales`, {
         headers: {
           'auth-token': token
         }
@@ -98,12 +99,11 @@ const AdminSales = () => {
   };
 
   const handlePrintPDF = (sale) => {
-    // Implement the logic to print the PDF for the sale
     console.log('Print PDF for sale:', sale);
   };
 
   const handleViewFullData = (sale) => {
-    navigate(`/receipt/${sale._id}`); // Navigate to SaleReceipt page with sale ID
+    navigate(`/receipt/${sale._id}`);
   };
 
   return (
