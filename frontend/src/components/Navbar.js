@@ -41,6 +41,9 @@ const Navbar = () => {
         <div className="menu-item">
           <ShareButton />
         </div>
+        <div className="menu-item">
+          <a href="/admin/login">Admin Login</a>
+        </div>
       </div>
       <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
         &#9776; {/* Hamburger icon */}
