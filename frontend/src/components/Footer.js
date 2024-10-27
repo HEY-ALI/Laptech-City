@@ -10,12 +10,9 @@ const Footer = () => {
           <div className="grid">
             <div>
               <h3>Branch 1 Office</h3>
-              <p>72B, HUDA Market Sector-29, Faridabad, Haryana, 121002</p>
+              <p>357A, Bhoor Colony Main Badhkal Road, Opposite Sector 29, Old Faridabad, Haryana 121002</p>
             </div>
-            <div>
-              <h3>Branch 2 Office</h3>
-              <p>Lane 1 Indira Complex, Khedi Road, Faridabad, Haryana, 121002</p>
-            </div>
+            
             <div>
               <h3>Contact Us</h3>
               <p>Email: laptechcity@gmail.com</p>
