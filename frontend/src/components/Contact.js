@@ -17,7 +17,7 @@ const Contact = () => {
         <div className="contact-info">
           <h3>Office</h3>
           <p>
-            72B, HUDA Market Sector-29,Old Faridabad, Haryana 121002
+            357A, Bhoor Colony Main Badhkal Road, Opposite Sector 29, Old Faridabad, Haryana 121002
           </p>
         </div>
 
